@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Tests]" data-provider-thread-count="1">
+  <parameter name="path" value="/"/>
+  <test name="Test1(failed)">
+    <parameter name="path" value="/"/>
+    <classes>
+      <class name="zolota.Login">
+        <methods>
+          <include name="tearDown"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- zolota.Login -->
+      <class name="zolota.Delete">
+        <methods>
+          <include name="DeleteMovie"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- zolota.Delete -->
+      <class name="zolota.AddMovie">
+        <methods>
+          <include name="init"/>
+        </methods>
+      </class> <!-- zolota.AddMovie -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Tests] -->

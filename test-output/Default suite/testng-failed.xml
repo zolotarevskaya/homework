@@ -3,25 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="zolota.Login">
-        <methods>
-          <include name="testUntitled"/>
-          <include name="tearDown"/>
-          <include name="init"/>
-        </methods>
-      </class> <!-- zolota.Login -->
       <class name="zolota.Delete">
         <methods>
+          <include name="tearDown"/>
           <include name="DeleteMovie"/>
           <include name="init"/>
         </methods>
       </class> <!-- zolota.Delete -->
-      <class name="zolota.AddMovie">
-        <methods>
-          <include name="CreateMovieFail"/>
-          <include name="CreateMovie"/>
-        </methods>
-      </class> <!-- zolota.AddMovie -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

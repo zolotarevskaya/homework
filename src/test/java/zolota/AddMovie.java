@@ -11,6 +11,7 @@ public class AddMovie extends TestBase {
 	public void CreateMovie() throws InterruptedException {
 		
 		 driver.findElement(By.xpath(".//*[@id='content']/section/nav/ul/li[1]/div/div/a")).click();
+		 driver.findElement(By.name("imdbid")).sendKeys("12");
 		 driver.findElement(By.name("name")).sendKeys("Тестовый Фильм"); //TITLE
 		 driver.findElement(By.name("aka")).sendKeys("тест");  //also as
 		 driver.findElement(By.name("year")).sendKeys("2015"); //YEAR
