@@ -79,14 +79,6 @@ public class AddMovie extends TestBase {
 			 }
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
 	
 	

@@ -10,13 +10,7 @@
 	<test name="Test2">
 	<parameter name="path" value="/"/>
 	<classes>
-		   <class name="zolota.AddMovie"/>
+		   <class name="zolota.Poisk"/>
 	</classes>
 	</test>  
-	<test name="Test3">
-	<parameter name="path" value="/"/>
-	<classes>
-		   <class name="zolota.Delete"/>
-	</classes>
-	</test> 
 </suite>

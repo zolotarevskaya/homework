@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Tests">
-              <span class="suite-name border-failed">Tests</span>
+              <span class="suite-name border-passed">Tests</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -53,7 +53,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Tests">
-                    <span class="test-stats">3 tests</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,21 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Tests" class="hide-methods failed suite-Tests"> (hide)</a> <!-- hide-methods failed suite-Tests -->
-                      <a href="#" panel-name="suite-Tests" class="show-methods failed suite-Tests"> (show)</a> <!-- show-methods failed suite-Tests -->
-                    </span>
-                    <div class="method-list-content failed suite-Tests">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="zolota.Delete" hash-for-method="DeleteMovie">DeleteMovie</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Tests -->
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -115,12 +101,12 @@
                     <div class="method-list-content passed suite-Tests">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="zolota.AddMovie" hash-for-method="CreateMovie">CreateMovie</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="zolota.Poisk" hash-for-method="MovieFound">MovieFound</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="zolota.AddMovie" hash-for-method="CreateMovieFail">CreateMovieFail</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="zolota.Poisk" hash-for-method="MovieNotFound">MovieNotFound</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -140,75 +126,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Tests" class="panel Tests">
-          <div class="suite-Tests-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">zolota.Delete</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="DeleteMovie">
-                  </a> <!-- DeleteMovie -->
-                  <span class="method-name">DeleteMovie</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;movie_12&apos;]/div[2]&quot;}
-Command duration or timeout: 30.13 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;
-System info: host: &apos;TEST05&apos;, ip: &apos;192.168.10.73&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=42.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 2026f9df-88ca-4df8-a2d2-20188da10193
-*** Element info: {Using=xpath, value=.//*[@id=&apos;movie_12&apos;]/div[2]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:455)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:358)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-	at zolota.Delete.DeleteMovie(Delete.java:16)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:771)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
-	at org.testng.TestNG.run(TestNG.java:1032)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;movie_12&apos;]/div[2]&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;
-System info: host: &apos;TEST05&apos;, ip: &apos;192.168.10.73&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/ZOLOTA~1.I/AppData/Local/Temp/anonymous7430116213067377450webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10299)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/ZOLOTA~1.I/AppData/Local/Temp/anonymous7430116213067377450webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Tests-class-failed -->
           <div class="suite-Tests-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -227,21 +144,21 @@ Driver info: driver.version: unknown
           <div class="suite-Tests-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">zolota.AddMovie</span>
+              <span class="class-name">zolota.Poisk</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="CreateMovie">
-                  </a> <!-- CreateMovie -->
-                  <span class="method-name">CreateMovie</span>
+                  <a name="MovieFound">
+                  </a> <!-- MovieFound -->
+                  <span class="method-name">MovieFound</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="CreateMovieFail">
-                  </a> <!-- CreateMovieFail -->
-                  <span class="method-name">CreateMovieFail</span>
+                  <a name="MovieNotFound">
+                  </a> <!-- MovieNotFound -->
+                  <span class="method-name">MovieNotFound</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -265,15 +182,9 @@ Driver info: driver.version: unknown
   &lt;test name=&quot;Test2&quot;&gt;
     &lt;parameter name=&quot;path&quot; value=&quot;/&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;zolota.AddMovie&quot;/&gt;
+      &lt;class name=&quot;zolota.Poisk&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test2 --&gt;
-  &lt;test name=&quot;Test3&quot;&gt;
-    &lt;parameter name=&quot;path&quot; value=&quot;/&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;zolota.Delete&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test3 --&gt;
 &lt;/suite&gt; &lt;!-- Tests --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -289,9 +200,6 @@ Driver info: driver.version: unknown
               </li>
               <li>
                 <span class="test-name">Test2 (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">Test3 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -317,28 +225,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'DeleteMovie')
-data.setCell(0, 2, 'zolota.Delete')
-data.setCell(0, 3, 31372);
+data.setCell(0, 1, 'MovieFound')
+data.setCell(0, 2, 'zolota.Poisk')
+data.setCell(0, 3, 10874);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'CreateMovieFail')
-data.setCell(1, 2, 'zolota.AddMovie')
-data.setCell(1, 3, 8690);
+data.setCell(1, 1, 'MovieNotFound')
+data.setCell(1, 2, 'zolota.Poisk')
+data.setCell(1, 3, 8982);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'CreateMovie')
-data.setCell(2, 2, 'zolota.AddMovie')
-data.setCell(2, 3, 8162);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testUntitled')
-data.setCell(3, 2, 'zolota.Login')
-data.setCell(3, 3, 3951);
+data.setCell(2, 1, 'testUntitled')
+data.setCell(2, 2, 'zolota.Login')
+data.setCell(2, 3, 1444);
 window.suiteTableData['Tests']= { tableData: data, tableDiv: 'times-div-Tests'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 52 seconds</span>
+              <span class="suite-total-time">Total running time: 21 seconds</span>
               <div id="times-div-Tests">
               </div> <!-- times-div-Tests -->
             </div> <!-- times-div -->
@@ -371,39 +275,26 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testUntitled</span>
-                <span class="method-start">21386 ms</span>
+                <span class="method-start">9817 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">zolota.AddMovie</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">zolota.Poisk</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">init</span>
-                <span class="method-start">25477 ms</span>
+                <span class="method-start">11353 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">CreateMovie</span>
-                <span class="method-start">25658 ms</span>
+                <span class="method-name">MovieFound</span>
+                <span class="method-start">11463 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">CreateMovieFail</span>
-                <span class="method-start">33822 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">zolota.Delete</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">init</span>
-                <span class="method-start">42524 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">DeleteMovie</span>
-                <span class="method-start">42557 ms</span>
+                <span class="method-name">MovieNotFound</span>
+                <span class="method-start">22351 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">74269 ms</span>
+                <span class="method-start">31353 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
